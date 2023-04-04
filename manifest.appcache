@@ -2,8 +2,8 @@ CACHE MANIFEST
 #version1
 
 CACHE:
-/index.html
-/style.css
+./index.html
+./style.css
 Image/gitpp.jpg
 Image/circle_profile_from_online.png
 
