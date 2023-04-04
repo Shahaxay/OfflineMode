@@ -1,0 +1,11 @@
+button{
+    color:white;
+    background-color: black;
+}
+button, img{
+    margin: 10px auto;
+    display: block;
+}
+h1{
+    text-align: center;
+}
