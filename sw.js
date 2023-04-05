@@ -3,6 +3,7 @@ const CACHE_NAME='static_cache17'
 const CACHE_RESOURSE=[
   './index.html',
   './style.css',
+  './script.js',
   'Image/i1.png',
   'Image/i2.jpg'
 ]
