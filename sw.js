@@ -1,5 +1,5 @@
 console.log("woking");
-const CACHE_NAME='static_cache19'
+const CACHE_NAME='static_cache20'
 const CACHE_RESOURSE=[
   './index.html',
   './style.css',
@@ -40,6 +40,7 @@ async function fetchassist(event) {
   } catch (err) {
     const cache = await caches.open(CACHE_NAME);
     return cache.match(event.request);
+}
 }
 
 self.addEventListener('fetch',(event)=>{
