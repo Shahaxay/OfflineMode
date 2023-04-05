@@ -39,23 +39,14 @@ async function fetchassist(event) {
     return response;
   } catch (err) {
     const cache = await caches.open(CACHE_NAME);
-    const cachedResponse = await cache.match(event.request);
-    if (cachedResponse) {
-      return cachedResponse;
-    }
-    throw err;
-  }
+    return cache.match(event.request);
 }
 
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    fetchassist(event).catch(() => {
-      return caches.open(CACHE_NAME).then((cache) => {
-        return cache.match(event.request);
-      });
-    })
-  );
+self.addEventListener('fetch',(event)=>{
+  event.respondWith(fetchassist(event));
+  console.log("SW fetched");
 });
+
 
 
 
