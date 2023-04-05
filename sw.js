@@ -1,5 +1,5 @@
 console.log("woking");
-const CACHE_NAME='static_cache18'
+const CACHE_NAME='static_cache19'
 const CACHE_RESOURSE=[
   './index.html',
   './style.css',
